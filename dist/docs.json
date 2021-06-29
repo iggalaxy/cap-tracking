@@ -1,0 +1,52 @@
+{
+  "api": {
+    "name": "TrackingPlugin",
+    "slug": "trackingplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "getStatus",
+        "signature": "() => any",
+        "parameters": [],
+        "returns": "any",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "AuthorizationStatus"
+        ],
+        "slug": "getstatus"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [
+    {
+      "name": "AuthorizationStatus",
+      "slug": "authorizationstatus",
+      "members": [
+        {
+          "name": "NOT_DETERMINED",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "RESTRICTED",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "DENIED",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "AUTHORIZED",
+          "tags": [],
+          "docs": ""
+        }
+      ]
+    }
+  ]
+}
