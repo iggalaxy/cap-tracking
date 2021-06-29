@@ -11,9 +11,37 @@ npx cap sync
 
 ## API
 
-<docgen-index></docgen-index>
+<docgen-index>
+
+* [`getStatus()`](#getstatus)
+* [Enums](#enums)
+
+</docgen-index>
 
 <docgen-api>
-<!-- run docgen to generate docs from the source -->
-<!-- More info: https://github.com/ionic-team/capacitor-docgen -->
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### getStatus()
+
+```typescript
+getStatus() => any
+```
+
+**Returns:** <code>any</code>
+
+--------------------
+
+
+### Enums
+
+
+#### AuthorizationStatus
+
+| Members              |
+| -------------------- |
+| **`NOT_DETERMINED`** |
+| **`RESTRICTED`**     |
+| **`DENIED`**         |
+| **`AUTHORIZED`**     |
+
 </docgen-api>

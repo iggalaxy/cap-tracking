@@ -1,7 +1,7 @@
 import Foundation
 
 @objc public class Tracking: NSObject {
-    @objc public func echo(_ value: String) -> String {
+    @objc public func getStatus(_ value: String) -> String {
         return value
     }
 }

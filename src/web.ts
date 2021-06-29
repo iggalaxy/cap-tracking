@@ -1,10 +1,11 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { TrackingPlugin } from './definitions';
+import type { AuthorizationStatus, TrackingPlugin } from './definitions';
 
 export class TrackingWeb extends WebPlugin implements TrackingPlugin {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+  async getStatus(): Promise<{ status: AuthorizationStatus }> {
+    return Promise.reject(
+      'Tracking plugin not configured for web usage - iOS only',
+    );
   }
 }

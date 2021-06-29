@@ -1,3 +1,10 @@
+export enum AuthorizationStatus {
+  NOT_DETERMINED,
+  RESTRICTED,
+  DENIED,
+  AUTHORIZED,
+}
+
 export interface TrackingPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  getStatus(): Promise<{ status: AuthorizationStatus }>;
 }
