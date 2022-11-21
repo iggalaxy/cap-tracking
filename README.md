@@ -24,10 +24,10 @@ npx cap sync
 ### getStatus()
 
 ```typescript
-getStatus() => any
+getStatus() => Promise<{ status: AuthorizationStatus; }>
 ```
 
-**Returns:** <code>any</code>
+**Returns:** <code>Promise&lt;{ status: <a href="#authorizationstatus">AuthorizationStatus</a>; }&gt;</code>
 
 --------------------
 

@@ -7,9 +7,9 @@
     "methods": [
       {
         "name": "getStatus",
-        "signature": "() => any",
+        "signature": "() => Promise<{ status: AuthorizationStatus; }>",
         "parameters": [],
-        "returns": "any",
+        "returns": "Promise<{ status: AuthorizationStatus; }>",
         "tags": [],
         "docs": "",
         "complexTypes": [
@@ -48,5 +48,7 @@
         }
       ]
     }
-  ]
+  ],
+  "typeAliases": [],
+  "pluginConfigs": []
 }
